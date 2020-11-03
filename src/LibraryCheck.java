@@ -30,7 +30,7 @@ public class LibraryCheck {
 
     private boolean isUnique(Book book, Book[] books) {
         for (int i = 0; i < bookCounter; i++) {
-            if (books[i].getName().equals(book.getName())) {
+            if (books[i].equals(book)) {
                 return false;
             }
         }
