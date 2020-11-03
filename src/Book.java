@@ -37,4 +37,9 @@ public class Book {
     public int hashCode() {
         return Objects.hash(name, pages);
     }
+
+    @Override
+    public String toString() {
+        return "Nazwa " +  name + " ilość stron: " + pages;
+    }
 }
